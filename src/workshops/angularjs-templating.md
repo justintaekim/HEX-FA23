@@ -2,7 +2,8 @@
 title: AngularJS Templating
 time: 2018-03-18T22:00:00.000Z
 teachers:
-  - name: Erik Yang
+  - img: /static/img/img_7732-square.jpg
+    name: Erik Yang
 ---
 Tired of copy-pasting HTML and CSS? Erik will be teaching you how to repeat website elements to streamline content and style editing using a popular Javascript front-end framework called AngularJS.
 

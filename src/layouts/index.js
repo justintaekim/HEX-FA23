@@ -12,19 +12,13 @@ const TemplateWrapper = ({ children }) => (
       meta={[
         {
           name: 'description',
-          content: 'Join Innovative Design for a weekend of free creative '\
-          'workshops, open to students of all skill levels!'
+          content: "Join Innovative Design for a weekend of free creative \
+          workshops, open to students of all skill levels!"
         },
       ]}
     />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+    <div>
       {children()}
     </div>
   </div>

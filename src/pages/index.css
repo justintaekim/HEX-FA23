@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+  font-family: 'LCD Solid';
+  src: url('/fonts/LCD_Solid.woff') format('woff');
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+}
+
+.header__container {
+  height: 100vh;
+  background-image: url(../img/sky.png);
+  background-size: cover;
+  background-position: center;
+  image-rendering: pixelated;
+}
+
+.header__date {
+  padding-top: 54px;
+}
+
+.header__date p {
+  font-family: "LCD Solid", sans-serif;
+  /*text-transform: uppercase;*/
+  font-size: 18pt;
+  color: white;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+.header__logo {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  width: 50%;
+  min-width: 300px;
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30%;
+  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.1));
+}
+
+.header__tagline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40%;
+  background-color: #FBFAEF;
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  /*padding: 15px 5px 15px 5px;*/
+  width: 30%;
+  min-width: 200px;
+
+box-shadow:
+      0   -6px 0  -2px #FBFAEF,
+      0    6px 0  -2px #FBFAEF,
+      0  -12px 0  -4px #FBFAEF,
+      0   12px 0  -4px #FBFAEF,
+      0  -18px 0  -8px #FBFAEF,
+      0   18px 0  -8px #FBFAEF,
+      0  -24px 0 -12px #FBFAEF,
+      0   24px 0 -12px #FBFAEF,
+     -2px  0   0   0   black,
+      2px  0   0   0   black,
+      0   -4px 0   0   black,
+      0    4px 0   0   black,
+      0  -10px 0  -2px black,
+      0   10px 0  -2px black,
+      0  -14px 0  -4px black,
+      0   14px 0  -4px black,
+      0  -20px 0  -8px black,
+      0   20px 0  -8px black,
+      0  -26px 0 -12px black,
+      0   26px 0 -12px black,
+     -4px  0   0   0   #FBFAEF,
+      4px  0   0   0   #FBFAEF,
+      0   -2px 0   2px #FBFAEF,
+      0    2px 0   2px #FBFAEF,
+      0   -8px 0   0px #FBFAEF,
+      0    8px 0   0px #FBFAEF,
+      0  -12px 0  -2px #FBFAEF,
+      0   12px 0  -2px #FBFAEF,
+      0  -16px 0  -4px #FBFAEF,
+      0   16px 0  -4px #FBFAEF,
+      0  -22px 0  -8px #FBFAEF,
+      0   22px 0  -8px #FBFAEF,
+      0  -28px 0 -12px #FBFAEF,
+      0   28px 0 -12px #FBFAEF,
+     -6px  0   0   0   black,
+      6px  0   0   0   black,
+      0    0   0   4px black,
+      0   -6px 0   2px black,
+      0    6px 0   2px black,
+      0  -10px 0   0   black,
+      0   10px 0   0   black,
+      0  -14px 0  -2px black,
+      0   14px 0  -2px black,
+      0  -18px 0  -4px black,
+      0   18px 0  -4px black,
+      0  -24px 0  -8px black,
+      0   24px 0  -8px black,
+      0  -30px 0 -12px black,
+      0   30px 0 -12px black;
+}
+
+.header__tagline h1 {
+  margin: 0 0 0 0;
+  font-size: 14pt;
+  /*font-family: "LCD Solid", sans-serif;*/
+  /*text-transform: uppercase;*/
+  /*font-weight: 400;*/
+}
+
+#boardwalk, #rollercoaster, #plane, #ferriswheel,
+#circustent, #gamebooths, #swingride {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  max-height: 500px;
+  left: 0;
+}
+
+#plane {
+  left: auto;
+  right: 5%;
+}
+
+
+#cloud2 {
+  width: 400px;
+  position: absolute;
+  bottom: -15vh;
+  right: 5%;
+  z-index: 5;
+}
+
+.foodcart {
+  height: 50px;
+  margin: 0 20px 0 0;
+}
+
+.leader {
+  width: 60px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 20px;
+}
+
+.leader__arrow {
+  border: 10px solid white;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+}
+
+.leader__text {
+  font-family: "LCD Solid", sans-serif;
+  text-transform: uppercase;
+  font-size: 10pt;
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+}
+
+.content {
+  background: linear-gradient(#EFBAB0, white);
+}
+
+.content__container {
+  padding: 5%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content__preview {
+  margin-bottom: 50px;
+}
+
+.content__preview h1 {
+  margin: 0 0 10px 0;
+}
+
+.content__preview p {
+  font-size: 16pt;
+}
+
+.workshops__container {
+  background-color: #FBFAEF;
+  padding: 0 20px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  box-shadow:
+      0   -6px 0  -2px #FBFAEF,
+      0    6px 0  -2px #FBFAEF,
+      0  -12px 0  -4px #FBFAEF,
+      0   12px 0  -4px #FBFAEF,
+      0  -18px 0  -8px #FBFAEF,
+      0   18px 0  -8px #FBFAEF,
+      0  -24px 0 -12px #FBFAEF,
+      0   24px 0 -12px #FBFAEF,
+     -2px  0   0   0   black,
+      2px  0   0   0   black,
+      0   -4px 0   0   black,
+      0    4px 0   0   black,
+      0  -10px 0  -2px black,
+      0   10px 0  -2px black,
+      0  -14px 0  -4px black,
+      0   14px 0  -4px black,
+      0  -20px 0  -8px black,
+      0   20px 0  -8px black,
+      0  -26px 0 -12px black,
+      0   26px 0 -12px black,
+     -4px  0   0   0   #FBFAEF,
+      4px  0   0   0   #FBFAEF,
+      0   -2px 0   2px #FBFAEF,
+      0    2px 0   2px #FBFAEF,
+      0   -8px 0   0px #FBFAEF,
+      0    8px 0   0px #FBFAEF,
+      0  -12px 0  -2px #FBFAEF,
+      0   12px 0  -2px #FBFAEF,
+      0  -16px 0  -4px #FBFAEF,
+      0   16px 0  -4px #FBFAEF,
+      0  -22px 0  -8px #FBFAEF,
+      0   22px 0  -8px #FBFAEF,
+      0  -28px 0 -12px #FBFAEF,
+      0   28px 0 -12px #FBFAEF,
+     -6px  0   0   0   black,
+      6px  0   0   0   black,
+      0    0   0   4px black,
+      0   -6px 0   2px black,
+      0    6px 0   2px black,
+      0  -10px 0   0   black,
+      0   10px 0   0   black,
+      0  -14px 0  -2px black,
+      0   14px 0  -2px black,
+      0  -18px 0  -4px black,
+      0   18px 0  -4px black,
+      0  -24px 0  -8px black,
+      0   24px 0  -8px black,
+      0  -30px 0 -12px black,
+      0   30px 0 -12px black;
+}
+
+.workshops__block {
+  padding: 30px;
+  flex: 1 1 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  .workshops__block {
+    padding: 5px;
+  }
+}
+
+.workshop__row {
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /*justify-content: center;*/
+}
+
+.workshop__row h3 {
+  margin: 0 0 0 0;
+}
+
+.workshop__row a:hover {
+  background-color: black;
+  color: #FBFAEF;
+  box-shadow:
+    0   -6px 0  -2px black,
+    0    6px 0  -2px black,
+    0  -12px 0  -4px black,
+    0   12px 0  -4px black,
+    0  -18px 0  -8px black,
+    0   18px 0  -8px black,
+    0  -24px 0 -12px black,
+    0   24px 0 -12px black,
+   -2px  0   0   0   black,
+    2px  0   0   0   black,
+    0   -4px 0   0   black,
+    0    4px 0   0   black,
+    0  -10px 0  -2px black,
+    0   10px 0  -2px black,
+    0  -14px 0  -4px black,
+    0   14px 0  -4px black,
+    0  -20px 0  -8px black,
+    0   20px 0  -8px black,
+    0  -26px 0 -12px black,
+    0   26px 0 -12px black,
+   -4px  0   0   0   black,
+    4px  0   0   0   black,
+    0   -2px 0   2px black,
+    0    2px 0   2px black,
+    0   -8px 0   0px black,
+    0    8px 0   0px black,
+    0  -12px 0  -2px black,
+    0   12px 0  -2px black,
+    0  -16px 0  -4px black,
+    0   16px 0  -4px black,
+    0  -22px 0  -8px black,
+    0   22px 0  -8px black,
+    0  -28px 0 -12px black,
+    0   28px 0 -12px black,
+   -6px  0   0   0   black,
+    6px  0   0   0   black,
+    0    0   0   4px black,
+    0   -6px 0   2px black,
+    0    6px 0   2px black,
+    0  -10px 0   0   black,
+    0   10px 0   0   black,
+    0  -14px 0  -2px black,
+    0   14px 0  -2px black,
+    0  -18px 0  -4px black,
+    0   18px 0  -4px black,
+    0  -24px 0  -8px black,
+    0   24px 0  -8px black,
+    0  -30px 0 -12px black,
+    0   30px 0 -12px black;
+}
+
+.workshop__row a {
+  padding: 0 10px 0 10px;
+  text-decoration: none;
+  font-family: "LCD Solid", sans-serif;
+  font-size: 10pt;
+  text-transform: uppercase;
+  color: black;
+  box-shadow:
+      0   -6px 0  -2px #FBFAEF,
+      0    6px 0  -2px #FBFAEF,
+      0  -12px 0  -4px #FBFAEF,
+      0   12px 0  -4px #FBFAEF,
+      0  -18px 0  -8px #FBFAEF,
+      0   18px 0  -8px #FBFAEF,
+      0  -24px 0 -12px #FBFAEF,
+      0   24px 0 -12px #FBFAEF,
+     -2px  0   0   0   black,
+      2px  0   0   0   black,
+      0   -4px 0   0   black,
+      0    4px 0   0   black,
+      0  -10px 0  -2px black,
+      0   10px 0  -2px black,
+      0  -14px 0  -4px black,
+      0   14px 0  -4px black,
+      0  -20px 0  -8px black,
+      0   20px 0  -8px black,
+      0  -26px 0 -12px black,
+      0   26px 0 -12px black,
+     -4px  0   0   0   #FBFAEF,
+      4px  0   0   0   #FBFAEF,
+      0   -2px 0   2px #FBFAEF,
+      0    2px 0   2px #FBFAEF,
+      0   -8px 0   0px #FBFAEF,
+      0    8px 0   0px #FBFAEF,
+      0  -12px 0  -2px #FBFAEF,
+      0   12px 0  -2px #FBFAEF,
+      0  -16px 0  -4px #FBFAEF,
+      0   16px 0  -4px #FBFAEF,
+      0  -22px 0  -8px #FBFAEF,
+      0   22px 0  -8px #FBFAEF,
+      0  -28px 0 -12px #FBFAEF,
+      0   28px 0 -12px #FBFAEF,
+     -6px  0   0   0   black,
+      6px  0   0   0   black,
+      0    0   0   4px black,
+      0   -6px 0   2px black,
+      0    6px 0   2px black,
+      0  -10px 0   0   black,
+      0   10px 0   0   black,
+      0  -14px 0  -2px black,
+      0   14px 0  -2px black,
+      0  -18px 0  -4px black,
+      0   18px 0  -4px black,
+      0  -24px 0  -8px black,
+      0   24px 0  -8px black,
+      0  -30px 0 -12px black,
+      0   30px 0 -12px black;
+}
+
+.workshop__info {
+  flex: 3 1 200px;
+  padding-right: 10px;
+}
+
+.workshop__time {
+  margin: 0 0 0 0;
+  font-family: "LCD Solid", sans-serif;
+  font-size: 10pt;
+}
+
+.workshop__actions:hover {
+  margin-top: 17.5px;
+}
+
+.workshop__actions {
+  flex: 1 1 100px;
+  margin-top: 20px;
+}
+
+.footer {
+  height: 90vh;
+  background-image: url(../img/cloudy_skies.png),
+    linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(194,226,244,1) 36%, rgba(194,226,244,1) 100%);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    height: 50vh;
+  }
+}
+
+.footer h1, .footer p {
+  text-align: center;
+}
+
+.btn__rsvp {
+  width: 20%;
+}
+
+a.header__tagline.btn__rsvp {
+  font-family: "LCD Solid", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+
+#innod {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 25%;
+  bottom: -30px;
+}

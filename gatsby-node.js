@@ -27,7 +27,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         path: edge.node.fields.slug,
         component: path.resolve('src/templates/workshopPage.js'),
         context: {
-          id: edge.node.id
+          id: edge.node.id,
+          slug: edge.node.fields.slug
         }
       })
     });

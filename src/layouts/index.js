@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/Header'
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
@@ -18,6 +17,16 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+    <script
+      type="text/javascript"
+      dangerouslySetInnerHTML={{
+        __html: `navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (let registration of registrations) {
+            registration.unregister();
+          } 
+        });`
+      }}
+    />
     <div>
       {children()}
     </div>

@@ -37,11 +37,13 @@ const TemplateWrapper = ({ children }) => (
     <script
       type="text/javascript"
       dangerouslySetInnerHTML={{
-        __html: `navigator.serviceWorker.getRegistrations().then(function(registrations) {
-          for (let registration of registrations) {
-            registration.unregister();
-          } 
-        });`
+        __html: `
+          netlifyIdentity.on('init', (user) => {
+            if (netlifyIdentity.currentUser()) {
+              window.location = "https://hex.innovativedesign.club/admin/";
+            }
+          });
+        `
       }}
     />
     <div>

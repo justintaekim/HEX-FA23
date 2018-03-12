@@ -5,7 +5,7 @@ teachers:
   - img: /static/img/20180309-img_7629.jpg
     name: Elva Chen
 ---
-Learn how to prepare for a career in UI/UX Design! Elva will be providing tips and examples on how to build a successful design portfolio and resume to attract recruiters in the design industry. You will learn about all kinds of different design interviews and how to nail them to get your internships!
+Learn how to prepare for a career in UI/UX Design! Elva will be providing tips and examples on how to build a successful design portfolio and resume to attract recruiters in the design industry. You will learn about all kinds of design interviews and how to nail them to get your internships!
 
 * Prior knowledge recommended.
 

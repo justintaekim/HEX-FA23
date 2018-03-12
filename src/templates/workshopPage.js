@@ -23,17 +23,18 @@ const WorkshopTemplate = (
       {
         name: 'description',
         content: excerpt
-      },
-      {
-        name: 'og:url',
-        content: `https://hex.innovativedesign.club${slug}`
-      },
-      {
-        name: 'og:title',
-        content: `${title} Workshop at HEX: Hone and Explore`
       }
     ]}
-  />
+  >
+    <meta
+      property="og:url"
+      content={`https://hex.innovativedesign.club${slug}`}
+    />
+    <meta
+      property="og:title"
+      content={`${title} Workshop at HEX: Hone and Explore`}
+    />
+  </Helmet>
   <div className="nav--mini">
     <Link to="/"><img src={hex} id="nav__logo" /></Link>
   </div>

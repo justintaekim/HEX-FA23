@@ -2,7 +2,7 @@
 title: Isometric Text
 time: 2018-03-17T19:00:00.000Z
 teachers:
-  - img: /static/img/img_7463.jpg
+  - img: /img/img_7463.jpg
     name: Elizabeth Zhou
 ---
 Elizabeth will be teaching a lesson on how to make awesome 3D/Isometric text in Illustrator! It involves using the Extrude and Bevel tool and deals a lot with the Appearance panel within Illustrator, so some prior experience with Illustrator is recommended!

@@ -10,4 +10,4 @@ Come learn how to create responsive web designs with Emily and Franco! You will 
 * Come to the workshop with your laptop and your favorite text editor!
 * Prior knowledge recommended
 
-Emily is a sophomore EECS major who has traveled to 6 countries in Europe to play concerts with a symphony. Franco is a junior Rhetoric and CS major who has co-founded his own fashion tech startup. They are both second-semester InnoD web team members! You can check out their awesome websites at <http://www.emilygosti.com> and [http://www.francotorium.com](http://www.francogments.com).
+Emily is a sophomore EECS major who has traveled to 6 countries in Europe to play concerts with a symphony. Franco is a junior Rhetoric and CS major who has co-founded his own fashion tech startup. They are both second-semester InnoD web team members! You can check out their awesome websites at <http://www.emilygosti.com> and <http://www.francotorium.com>.

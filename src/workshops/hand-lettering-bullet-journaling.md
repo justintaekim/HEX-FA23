@@ -2,7 +2,7 @@
 title: Hand Lettering and Bullet Journaling
 time: 2018-03-17T17:00:00.000Z
 teachers:
-  - img: /static/img/img_7639 (1).jpg
+  - img: /img/img_7639 (1).jpg
     name: Kiana Aryan
   - name: Sheryl Chang
 ---

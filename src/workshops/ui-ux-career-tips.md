@@ -9,4 +9,4 @@ Learn how to prepare for a career in UI/UX Design! Elva will be providing tips a
 
 * Prior knowledge recommended.
 
-Check out some of Elva’s UI/UX design work at <https://www.elvachenxy.com/>
+Elva previously worked at ZapLabs as Product Design Intern, and will be joining Twitter this summer. Check out some of Elva’s UI/UX design work at <https://www.elvachenxy.com/> And her resume [here](https://drive.google.com/file/d/1peA96WT77wuOi5MzjXxokC9nRDzMO6DP/view?usp=sharing).

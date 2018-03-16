@@ -74,6 +74,7 @@ const IndexPage = ({ data: { allMarkdownRemark: {edges} } }) => (<div>
         {filterAndSortByDay(edges, 6).map((
           { frontmatter: {title, teachers, time}, excerpt, fields: { slug } }
         ) => <Workshop
+              key={title}
               {...{ title, teachers, time, excerpt, slug }}
             />
         )}
@@ -83,6 +84,7 @@ const IndexPage = ({ data: { allMarkdownRemark: {edges} } }) => (<div>
         {filterAndSortByDay(edges, 0).map((
           { frontmatter: {title, teachers, time}, excerpt, fields: { slug } }
         ) => <Workshop
+              key={title}
               {...{ title, teachers, time, excerpt, slug }}
             />
         )}

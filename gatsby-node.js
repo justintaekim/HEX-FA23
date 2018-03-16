@@ -4,13 +4,18 @@ const { createFilePath } = require('gatsby-source-filesystem');
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
   return graphql(`
-    query PathQuery {
+    query WorkshopPageCreateQuery {
       allMarkdownRemark {
         edges {
           node {
             id
             fields {
               slug
+            }
+            frontmatter {
+              teachers {
+                img
+              }
             }
           }
         }
@@ -22,13 +27,19 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       return Promise.reject(result.errors);
     }
 
-    result.data.allMarkdownRemark.edges.forEach((edge) => {
+    result.data.allMarkdownRemark.edges.forEach(({
+      node: { id, fields, frontmatter: { teachers } }
+    }) => {
       createPage({
-        path: edge.node.fields.slug,
+        path: fields.slug,
         component: path.resolve('src/templates/workshopPage.js'),
         context: {
-          id: edge.node.id,
-          slug: edge.node.fields.slug
+          id: id,
+          slug: fields.slug,
+          firstPicture: teachers[0] && teachers[0].img
+            ? teachers[0].img.split('/').pop() : "",
+          secondPicture: teachers[1] && teachers[1].img
+            ? teachers[1].img.split('/').pop() : "",
         }
       })
     });

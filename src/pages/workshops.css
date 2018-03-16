@@ -24,11 +24,33 @@
 }
 
 .workshops__container.workshops__page {
+  display: block;
   box-sizing: border-box;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  padding: 40px;
+  padding-top: 20px;
+}
+
+.workshops__page h1 {
+  margin-bottom: 10px;
+}
+
+.workshops__page h3 {
+  font-size: 14pt;
+}
+
+.workshops__time {
+  font-family: "LCD Solid", sans-serif;
+  text-transform: uppercase;
+  font-size: 10pt;
+  margin-bottom: 0;
+}
+
+.workshops__picture {
+  border-radius: 100%;
+  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -8,12 +8,17 @@ import Link from 'gatsby-link';
 import '../pages/index.css';
 import '../pages/workshops.css';
 
+import moment from 'moment';
 import hex from '../img/clouds.png';
+
+import Img from 'gatsby-image';
 
 const WorkshopTemplate = (
   { data:
     { markdownRemark: 
-      { html, fields: { slug }, frontmatter: { title, time, teachers }, excerpt }
+      { html, fields: { slug }, frontmatter: { title, time, teachers }, excerpt },
+      speakerImage1,
+      speakerImage2
     }
   }
 ) => (<div>
@@ -40,7 +45,19 @@ const WorkshopTemplate = (
   </div>
   <div className="ws_content__container">
   <div className="workshops__container workshops__page">
+    <div>
+      {speakerImage1 ? <Img
+        resolutions={speakerImage1.childImageSharp.resolutions}
+        className="workshops__picture"
+      /> : null}
+      {speakerImage2 ? <Img
+        resolutions={speakerImage2.childImageSharp.resolutions}
+        className="workshops__picture"
+      /> : null}
+    </div>
+    <p className="workshops__time">{moment(time).format('dddd, MMM. D, hh:mm A')}</p>
     <h1>{title}</h1>
+    <h3>Led by {teachers.map(t => t.name).join(' and ')}</h3>
     <div
       dangerouslySetInnerHTML={{ __html: html }}
     >
@@ -53,7 +70,11 @@ const WorkshopTemplate = (
 export default WorkshopTemplate;
 
 export const pageQuery = graphql`
-  query WorkshopQuery($id: String!) {
+  query WorkshopQuery(
+    $id: String!,
+    $firstPicture: String!,
+    $secondPicture: String!
+  ) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -65,9 +86,28 @@ export const pageQuery = graphql`
         time
         teachers {
           name
+          img
         }
       }
       excerpt
+    }
+    speakerImage1: file(relativePath: {
+      eq: $firstPicture
+    }) {
+      childImageSharp {
+        resolutions(width: 75, height: 75) {
+          ...GatsbyImageSharpResolutions
+        }
+      }
+    }
+    speakerImage2: file(relativePath: {
+      eq: $secondPicture
+    }) {
+      childImageSharp {
+        resolutions(width: 75, height: 75) {
+          ...GatsbyImageSharpResolutions
+        }
+      }
     }
   }
 `

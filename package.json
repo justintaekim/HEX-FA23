@@ -5,6 +5,7 @@
   "author": "Ethan Lee <hello@ethanl.ee>",
   "dependencies": {
     "gatsby": "^1.9.223",
+    "gatsby-image": "^1.0.42",
     "gatsby-link": "^1.6.38",
     "gatsby-plugin-netlify-cms": "^1.0.12",
     "gatsby-plugin-react-helmet": "^2.0.6",

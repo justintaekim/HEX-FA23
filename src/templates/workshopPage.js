@@ -12,6 +12,16 @@ import moment from 'moment';
 import hex from '../img/clouds.png';
 
 import Img from 'gatsby-image';
+// import AddToCalendar from 'react-add-to-calendar';
+/*    <AddToCalendar
+      event={{
+        title: `[HEX] ${title} Workshop`,
+        description: html.replace(/<(?:.|\n)*?>/gm, ''),
+        location: "Wheeler 102",
+        startTime: moment(time).toISOString(),
+        endTime: moment(time).add(1, 'hours').toISOString()
+      }}
+    />*/
 
 const WorkshopTemplate = (
   { data:

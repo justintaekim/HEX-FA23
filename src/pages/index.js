@@ -29,7 +29,7 @@ const filterAndSortByDay = (edges, day) => {
     { node: { frontmatter: {time: a} } },
     { node: { frontmatter: {time: b} } }
   ) => {
-    return +moment(a) > +moment(b);
+    return +moment(a) - +moment(b);
   }).map((obj) => {
     return obj.node;
   });

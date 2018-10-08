@@ -8,7 +8,7 @@ const Footer = () => (<div className="footer">
   <p>No tickets are required: HEX is free every year.</p>
   <a
     className="btn__rsvp"
-    href="https://www.facebook.com/events/560397307659186/"
+    href="https://www.facebook.com/events/388551748348216/"
   >
     RSVP now
   </a>

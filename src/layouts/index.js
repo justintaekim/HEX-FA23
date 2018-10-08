@@ -7,7 +7,7 @@ import './index.css'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="HEX: Hone and Explore - March 17-18, 2018"
+      title="HEX: Hone and Explore - October 13-14, 2018"
       meta={[
         {
           name: 'description',
@@ -18,7 +18,7 @@ const TemplateWrapper = ({ children }) => (
     >
       <meta
         property="og:image"
-        content="https://hex.innovativedesign.club/img/cover.png"
+        content="https://hex.innovativedesign.club/img/cover-fa18.png"
       />
       <meta
         property="og:type"
@@ -30,7 +30,7 @@ const TemplateWrapper = ({ children }) => (
       />
       <meta
         property="og:title"
-        content="HEX: Hone and Explore - March 17-18, 2018"
+        content="HEX: Hone and Explore - October 13-14, 2018"
       />
     </Helmet>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />

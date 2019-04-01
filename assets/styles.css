@@ -171,6 +171,7 @@ h5 {
 .hero_text_container--inner h1 {
   text-align: left;
   line-height: 96px;
+  z-index: 0; 
   /* transform: translateX(-100px); */
 }
 

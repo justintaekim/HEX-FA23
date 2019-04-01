@@ -161,6 +161,7 @@ function fishSwim(x0, x1) {
   var fish_div = document.createElement('div');
   fish_div.style.transform = "rotate(" + angle.toString() + "deg)";
   fish_div.className = 'fish_container';
+  fish_div.style.zIndex = '-1500';
   // creating the fish
   for (var i = 0; i < numFish; i++) {
     // create the fish container and fish

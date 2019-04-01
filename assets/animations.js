@@ -130,7 +130,7 @@ hero_timeline
 .add({
   targets: '.intersect',
   opacity: 0,
-  duration: 750,
+  duration: 1000,
 }, '-=500');
 
 anime({

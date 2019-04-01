@@ -209,7 +209,7 @@ var fish_wrapper = document.getElementsByClassName('fish_wrapper')[0];
 var maxDist = Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2));
 var interval = (maxDist / 380) * 1000;
 
-fishSwim(-width, width);
+fishSwim(0, width);
 
 setInterval(function() {
   var x0 = getRandomInt(2) * width;

@@ -19,7 +19,7 @@ var bubbles = ['./img/bubble-1.svg', './img/bubble-2.svg', './img/bubble-3.svg']
 var numBubbles = 10;
 var title;
 for (var title in titles) {
-  numBubbles += 20;
+  numBubbles += 10;
   for (var i = 0; i < numBubbles; i++) {
 
     if (title == 0) {
@@ -130,7 +130,7 @@ hero_timeline
 .add({
   targets: '.intersect',
   opacity: 0,
-  duration: 500,
+  duration: 750,
 }, '-=500');
 
 anime({
@@ -185,13 +185,6 @@ function fishSwim(x0, x1) {
       easing: 'linear'
     });
 
-    // anime({
-    //   targets: '.fish_wrapper img',
-    //   opacity: 0,
-    //   duration: dur,
-    //   easing: 'linear'
-    // });
-
     setTimeout(delete_fish, dur);
   }
 
@@ -209,11 +202,14 @@ var fish_wrapper = document.getElementsByClassName('fish_wrapper')[0];
 var maxDist = Math.sqrt(Math.pow(width, 2) + Math.pow(height, 2));
 var interval = (maxDist / 380) * 1000;
 
-fishSwim(0, width);
+setTimeout(function() {
+    fishSwim(0, width);
 
-setInterval(function() {
-  var x0 = getRandomInt(2) * width;
-  var x1 = width - x0;
+    setInterval(function() {
+      var x0 = getRandomInt(2) * width;
+      var x1 = width - x0;
 
-  fishSwim(x0, x1);
-}, interval * 2);
+      fishSwim(x0, x1);
+    }, interval * 2);
+
+}, 1000);

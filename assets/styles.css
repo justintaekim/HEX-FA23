@@ -319,7 +319,7 @@ h5 {
 
   #ball_container {
     width: 20%;
-    left: 0;  
+    left: 0;
   }
 
   #island_container {
@@ -395,7 +395,7 @@ h5 {
 
 .schedule_wrapper {
   position: relative;
-  margin-bottom: 120px;
+
 }
 
 .schedule-row>div {
@@ -456,4 +456,32 @@ h5 {
   .schedule-block {
     /* margin-bottom: 8px; */
   }
+}
+
+.footer_container {
+  margin-bottom: 120px;
+}
+
+.button__container {
+  position: relative;
+  width: 100%;
+  height: 120px;
+}
+
+.button__container a {
+
+  background-color: #204497;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+}
+
+.button__container a:hover {
+  background-color: #0B2949;
+  text-decoration: none;
 }

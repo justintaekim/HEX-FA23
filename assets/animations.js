@@ -210,6 +210,6 @@ setTimeout(function() {
       var x1 = width - x0;
 
       fishSwim(x0, x1);
-    }, interval * 2);
+    }, interval * 3);
 
-}, 1000);
+}, 1500);

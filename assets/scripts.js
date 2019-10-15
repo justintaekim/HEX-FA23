@@ -55,7 +55,7 @@ function generateSchedule(day) {
   // create title div (hone/explore)
   let honeTitle = document.createElement("div");
   honeTitle.setAttribute('class', 'col-12 schedule-logistics');
-  honeTitle.innerHTML = '<h4>Hone</h4>';
+  honeTitle.innerHTML = '<h4>Hone</h4>' + '<p>Barrows 56</p>';
   honeDiv.appendChild(honeTitle);
 
   // create schedule divs
@@ -77,7 +77,7 @@ function generateSchedule(day) {
   // create title div (hone/explore)
   let exploreTitle = document.createElement("div");
   exploreTitle.setAttribute('class', 'col-12 schedule-logistics');
-  exploreTitle.innerHTML = '<h4>Explore</h4>';
+  exploreTitle.innerHTML = '<h4>Explore</h4>' + '<p>Barrows 56</p>';
   exploreDiv.appendChild(exploreTitle);
 
   // create schedule divs

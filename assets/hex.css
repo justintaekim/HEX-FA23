@@ -291,6 +291,17 @@ h5 {
   margin: 36px 0px;
 }
 
+.schedule-block .description {
+  color: #283364;
+  /* text-align: justify; */
+  padding-top: 5px;
+}
+
+.schedule-block .required {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
 .schedule-block p, .schedule-block h4, .schedule-block b {
   margin: 2px;
 

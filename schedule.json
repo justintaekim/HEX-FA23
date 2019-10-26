@@ -21,7 +21,7 @@
     ],
     "explore": [
       {"time": "12:00 PM", "title": "Building Comfort with Clients", "speakers": "Vivian Tiet", "description": "Being relational with your client is the magic behind portrait photography. Whether that client is a random person, a family member, or your roommate, come learn how to capture their character in a photograph.", "required": "Any camera! Even a phone will work."},
-      {"time": "1:00 PM", "title": "Photo Collages with Photoshop", "speakers": "Jago Pang", "description": "", "required": "Adobe Photoshop, Google Drive"},
+      {"time": "1:00 PM", "title": "Photo Collages with Photoshop", "speakers": "Jago Pang", "description": "Editing photos is not only limited to the photos themselves, but also using them in making compositions or collages.  So come and learn the basics of collaging and create your very own aesthetic vaporwave collages using photoshop!", "required": "Adobe Photoshop, Google Drive"},
       {"time": "2:00 PM", "title": "Photography Ethics", "speakers": "Christian Kim", "description": "This workshop will engage with critical thinking in an in-depth conversation on the ethics of photography before and after the shot (digital manipulation, engaging with subjects, photographing other cultures, etc.). The goal is to provide ethical literacy, giving you more tangible tools to be effective in your work while gaining access to relationships and communities in socially responsible ways.", "required": ""},
       {"time": "3:00 PM", "title": "Intro to 35mm Film", "speakers": "Calvin Tang", "description": "Film photography can feel like a daunting vintage world to enter, especially in the age of digital sensors and complex software. Come learn what you need to get started with 35mm photography!", "required": ""},
       {"time": "4:00 PM", "title": "Maintaining Your Creative Confidence and Fighting Imposter Syndrome", "speakers": "Renee Utter", "description": "", "required": ""}
@@ -37,7 +37,7 @@
       {"time": "12:00 PM", "title": "Web Accessibility", "speakers": "Emily Gosti", "description": "", "required": "Laptop"},
       {"time": "1:00 PM", "title": "How to Animate with anime.js", "speakers": "Brian Ho", "description": "", "required": "Laptop"},
       {"time": "2:00 PM", "title": "Responsive Web Design", "speakers": "Courtnie Chan", "description": "", "required": "Laptop, text editor (ie. atom, vscode, sublime)"},
-      {"time": "3:00 PM", "title": "Audio Visualizer with three.js", "speakers": "Alan Nguyen, Ethan Lee", "description": "", "required": "Laptop, text editor (ie. atom, vscode, sublime)"},
+      {"time": "3:00 PM", "title": "Audio Visualization with three.js", "speakers": "Alan Nguyen, Ethan Lee", "description": "", "required": "Laptop, text editor (ie. atom, vscode, sublime)"},
       {"time": "4:00 PM", "title": "Intro to Processing and Processing Foundation", "speakers": "Lucy Song, Kevin Li", "description": "", "required": "Processing, some coding background"}
     ]
   }

@@ -126,6 +126,13 @@ h5 {
   zoom: 35%;
 }
 
+.rounded {
+  position: absolute;
+  top: -120px;
+  left: -60px;
+  width: 260px;
+}
+
 @media only screen and (max-width: 1440px) {
 
   .suitcase_container {
@@ -156,6 +163,12 @@ h5 {
   .suitcase {
     zoom: 20%;
   }
+
+  .rounded {
+    top: -100px;
+    left: -50px;
+    width: 200px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -182,6 +195,12 @@ h5 {
   .suitcase {
     zoom: 15%;
   }
+
+  .rounded {
+    top: -70px;
+    left: -24px;
+    width: 140px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -195,6 +214,10 @@ h5 {
 
   .suitcase_container {
     top: 50%;
+  }
+
+  .rounded {
+    left: -36px;
   }
 }
 

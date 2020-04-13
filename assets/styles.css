@@ -16,6 +16,41 @@
        url('fonts/BriceBold.woff') format('woff');
 }
 
+.fixed-top {
+  z-index: -2;
+}
+
+.fixed-bottom {
+  z-index: 0;
+}
+
+#coffee {
+  height: 50vh;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#bus {
+  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#water {
+  height: 50vh;
+  position: absolute;
+  right: 0;
+}
+
+#index-cards {
+  height: 50vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 body {
   font-family: BriceLight;
   font-weight: normal;
@@ -94,6 +129,7 @@ a:hover {
 }
 
 .boxes {
+  z-index: -1;
   width: 80%;
   margin: 1rem auto;
 }
@@ -120,8 +156,14 @@ a:hover {
 }
 
 .datetime {
-  margin: 1rem auto;
+  display: flex;
+  align-items: center;
   width: 80%;
+}
+
+.datetime img {
+  margin: 1rem auto;
+  width: 100%;
 }
 
 .description {
@@ -171,6 +213,7 @@ a:hover {
 @media only screen and (max-width: 1024px) {
   h1 {
     font-size: 54px;
+    margin-bottom: 1rem;
   }
 
   h3 {
@@ -189,7 +232,7 @@ a:hover {
     margin-bottom: 3rem;
   }
 
-  .datetime {
+  .datetime img {
     width: 60%;
   }
 
@@ -207,6 +250,10 @@ a:hover {
   h3 {
     font-size: 16px;
     margin: 2px;
+  }
+
+  .boxes {
+    z-index: 0;
   }
 
   .btn {

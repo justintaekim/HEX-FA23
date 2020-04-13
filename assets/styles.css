@@ -128,13 +128,18 @@ a:hover {
   color: #f2c32c;
 }
 
+.box-container {
+  display: flex;
+  align-items: center;
+}
+
 .boxes {
   z-index: -1;
   width: 80%;
   margin: 1rem auto;
 }
 
-.boxes-container {
+/* .boxes-container {
   left: 10%;
   width: 70%;
 }
@@ -145,7 +150,7 @@ a:hover {
 
 .box-container {
   position: absolute;
-}
+} */
 
 .boxes img {
   width: 80%;

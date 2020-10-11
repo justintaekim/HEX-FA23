@@ -24,6 +24,75 @@
   z-index: 0;
 }
 
+#cloud {
+  z-index: -999999;
+  position: absolute;
+  transform: translateY(-5em);
+}
+
+#cloud2 {
+  z-index: -999999;
+  position: absolute;
+  width: 200%;
+}
+
+#cloud3 {
+  z-index: -999999;
+  position: absolute;
+  right: 50%;
+  top: 35%;
+  width: 100%;
+}
+
+#cloud4 {
+  z-index: -999999;
+  position: absolute;
+  right: 50%;
+  top: 35%;
+  width: 200%;
+}
+
+#camera {
+  z-index: -999999;
+  position: absolute;
+  width: 40%;
+  transform: translateY(5em);
+}
+
+#pen-tool {
+  z-index: -999999;
+  position: absolute;
+  width: 20%;
+  right: 50%;
+}
+
+#line {
+  z-index: -999999;
+  position: absolute;
+  width: 40%;
+  transform: translateY(5em);
+}
+
+#cloud-container {
+  text-align: center;
+  display: block;
+}
+
+#laptop {
+  z-index: -999999;
+  position: absolute;
+  width: 40%;
+  left: 90%;
+}
+
+#sparkle {
+  z-index: -999999;
+  position: absolute;
+  width: 25%;
+  right: 97%;
+  top: 40%;
+}
+
 #coffee {
   height: 50vh;
   position: absolute;
@@ -56,9 +125,10 @@ body {
   font-weight: normal;
   margin: 0;
   z-index: 0;
-  background-color: #1c7c3e;
+  background-color: #190457;
   position: relative;
   color: #efe3ce;
+  overflow-x: hidden;
 }
 
 .hero-container {
@@ -78,7 +148,7 @@ body {
 h1 {
   font-family: BriceBold;
   text-align: center;
-  color: #000;
+  color: #fff;
   font-size: 80px;
   margin-bottom: 3rem;
 }
@@ -93,7 +163,7 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  color: #000;
+  color: #fff;
   font-size: 24px;
 }
 
@@ -232,6 +302,38 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  #cloud {
+    width: 0%;
+  }
+
+  #cloud2 {
+    width: 0%;
+  }
+
+  #cloud3 {
+    width: 0%;
+  }
+
+  #cloud4 {
+    width: 0%;
+  }
+
+  #line {
+    width: 0%;
+  }
+
+  #camera {
+    width: 0%;
+  }
+
+  #sparkle {
+    width: 0%;
+  }
+
+  #pen-tool {
+    width: 0%;
+  }
+
   .hero-container {
     margin-top: 0;
     margin-bottom: 3rem;
@@ -376,5 +478,5 @@ a:hover {
 }
 
 .footer img {
-  height: 100px;
+  height: 300px;
 }

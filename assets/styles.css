@@ -94,7 +94,7 @@
 }
 
 #coffee {
-  height: 20vh;
+  height: 10vh;
   position: absolute;
   left: -10;
   bottom: 20;
@@ -108,7 +108,7 @@
 }
 
 #water {
-  height: 20vh;
+  height: 10vh;
   position: absolute;
   right: 0;
   top: 25;

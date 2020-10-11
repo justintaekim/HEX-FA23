@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "BriceLight";
   src: url('fonts/BriceLight.woff2') format('woff2'),
        url('fonts/BriceLight.woff') format('woff');
@@ -14,7 +14,7 @@
   font-family: "BriceBold";
   src: url('fonts/BriceBold.woff2') format('woff2'),
        url('fonts/BriceBold.woff') format('woff');
-}
+} */
 
 .fixed-top {
   z-index: -2;
@@ -94,34 +94,35 @@
 }
 
 #coffee {
-  height: 50vh;
+  height: 20vh;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: -10;
+  bottom: 20;
 }
 
 #bus {
-  height: 50vh;
+  height: 35vh;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 25;
+  left: -25;
 }
 
 #water {
-  height: 50vh;
+  height: 20vh;
   position: absolute;
   right: 0;
+  top: 25;
 }
 
 #index-cards {
-  height: 50vh;
+  height: 25vh;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 25;
 }
 
 body {
-  font-family: BriceLight;
+  font-family: "Lexend Deca";
   font-weight: normal;
   margin: 0;
   z-index: 0;
@@ -141,12 +142,12 @@ body {
 }
 
 .hero-container h1 {
-  font-family: BriceBold;
+  font-family: "Flamenco";
   font-weight: bold;
 }
 
 h1 {
-  font-family: BriceBold;
+  font-family: "Flamenco";
   text-align: center;
   color: #fff;
   font-size: 80px;
@@ -154,7 +155,7 @@ h1 {
 }
 
 h2 {
-  font-family: BriceSemiBold;
+  font-family: "Lexend Deca";
   font-size: 36px;
   margin: 0;
 }
@@ -168,7 +169,7 @@ h3 {
 }
 
 h4 {
-  font-family: BriceSemiBold;
+  font-family: "Lexend Deca";
   font-size: 22px;
 }
 
@@ -265,7 +266,7 @@ a:hover {
   color: white;
   padding: 12px;
   text-align: center;
-  border-radius: 0;
+  border-radius: 10%;
   border: 3px solid black;
 }
 
@@ -426,7 +427,7 @@ a:hover {
 }
 
 .schedule-logistics h4 {
-  font-family: BriceSemiBold;
+  font-family: "Lexend Deca";
   color: #f2c32c;
   font-size: 26px;
 }
@@ -461,7 +462,7 @@ a:hover {
 
 .schedule-block h4 {
   color: #efe3ce;
-  font-family: BriceSemiBold;
+  font-family: "Lexend Deca";
   font-size: 22px;
   margin-bottom: 4px;
 }

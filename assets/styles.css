@@ -16,6 +16,10 @@
        url('fonts/BriceBold.woff') format('woff');
 } */
 
+#hone-title {
+  color: #F9E7D5;
+}
+
 .fixed-top {
   z-index: -2;
 }

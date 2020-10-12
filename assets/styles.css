@@ -350,6 +350,7 @@ a:hover {
     font-size: 32px;
     margin-top: 3rem;
     margin-bottom: 1rem;
+    font-weight: bold;
   }
 
   h2 {
@@ -364,12 +365,12 @@ a:hover {
 
   .boxes {
     z-index: 0;
+    margin-bottom: 15;
   }
 
   .btn {
     font-size: 1rem;
     margin: 1rem;
-    border: 2px solid black;
   }
 
   .content {

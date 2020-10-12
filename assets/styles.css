@@ -1,23 +1,6 @@
-/* @font-face {
-  font-family: "BriceLight";
-  src: url('fonts/BriceLight.woff2') format('woff2'),
-       url('fonts/BriceLight.woff') format('woff');
-}
-
-@font-face {
-  font-family: "BriceSemiBold";
-  src: url('fonts/BriceSemiBold.woff2') format('woff2'),
-       url('fonts/BriceSemiBold.woff') format('woff');
-}
-
-@font-face {
-  font-family: "BriceBold";
-  src: url('fonts/BriceBold.woff2') format('woff2'),
-       url('fonts/BriceBold.woff') format('woff');
-} */
-
 #hone-title {
   color: #F9E7D5;
+  -webkit-appearance: none;
 }
 
 .fixed-top {
@@ -157,7 +140,8 @@ h1 {
   color: #fff;
   font-size: 100px;
   margin-bottom: 3rem;
-  letter-spacing: 5px;
+  letter-spacing: .05em;
+  font-weight: 800;
 }
 
 h2 {
@@ -354,7 +338,7 @@ a:hover {
     font-size: 32px;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    font-weight: bold;
+    font-weight: 800;
   }
 
   h2 {

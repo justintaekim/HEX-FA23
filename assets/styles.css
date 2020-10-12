@@ -28,6 +28,7 @@
   z-index: -999999;
   position: absolute;
   transform: translateY(-5em);
+  left: 65%;
 }
 
 #cloud2 {
@@ -39,7 +40,7 @@
 #cloud3 {
   z-index: -999999;
   position: absolute;
-  right: 50%;
+  right: 80%;
   top: 35%;
   width: 100%;
 }
@@ -47,7 +48,7 @@
 #cloud4 {
   z-index: -999999;
   position: absolute;
-  right: 50%;
+  right: 95%;
   top: 35%;
   width: 200%;
 }
@@ -150,8 +151,9 @@ h1 {
   font-family: "Flamenco";
   text-align: center;
   color: #fff;
-  font-size: 80px;
+  font-size: 100px;
   margin-bottom: 3rem;
+  letter-spacing: 5px;
 }
 
 h2 {
@@ -164,8 +166,9 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  color: #fff;
+  color: #F1A6A3;
   font-size: 24px;
+  letter-spacing: 1px;
 }
 
 h4 {
@@ -178,7 +181,7 @@ h5 {
 }
 
 a {
-  color: #ea7015;
+  color: #E66661;
   font-weight: bold;
 }
 
@@ -196,7 +199,7 @@ a:hover {
 }
 
 .faq-section h4 {
-  color: #f2c32c;
+  color: #4F97E2;
 }
 
 .box-container {
@@ -206,8 +209,8 @@ a:hover {
 
 .boxes {
   z-index: -1;
-  width: 80%;
-  margin: 1rem auto;
+  width: 60%;
+  margin: 0rem auto;
 }
 
 /* .boxes-container {
@@ -262,12 +265,11 @@ a:hover {
 .btn {
   font-size: 1.5rem;
   margin: 1.5rem;
-  background-color: #2f5bc9;
+  background-color: #4F97E2;
   color: white;
-  padding: 12px;
+  padding: 10px 25px;
   text-align: center;
-  border-radius: 10%;
-  border: 3px solid black;
+  letter-spacing: 1px;
 }
 
 .btn:hover {
@@ -428,7 +430,8 @@ a:hover {
 
 .schedule-logistics h4 {
   font-family: "Lexend Deca";
-  color: #f2c32c;
+  font-weight: 800;
+  color: #F1A6A3;
   font-size: 26px;
 }
 
@@ -440,6 +443,7 @@ a:hover {
 .schedule-block .description {
   color: #efe3ce;
   /* text-align: justify; */
+  font-weight: 400;
   padding-top: 5px;
 }
 
@@ -455,9 +459,9 @@ a:hover {
 
 .schedule-block p {
 
-  font-weight: 800;
+  font-weight: 600;
   /* font-size: 12px;  */
-  color: #f2c32c;
+  color: #4F97E2;
 }
 
 .schedule-block h4 {
@@ -468,7 +472,7 @@ a:hover {
 }
 
 .schedule-block b {
-  color: #f2c32c;
+  color: #F1A6A3;
   font-size: 14px;
 }
 

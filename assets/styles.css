@@ -1,5 +1,15 @@
+@font-face {
+  font-family: Pilowlava;
+  src: url(../assets/fonts/Pilowlava-Regular.woff);
+}
+
+* {
+  color:#1E7158;
+}
+
 #hone-title {
-  color: #F9E7D5;
+  color: #1E7158;
+  font-family: Pilowlava;
   -webkit-appearance: none;
 }
 
@@ -114,7 +124,7 @@ body {
   font-weight: normal;
   margin: 0;
   z-index: 0;
-  background-color: #190457;
+  background-color: #F0F7F4;
   position: relative;
   color: #efe3ce;
   overflow-x: hidden;
@@ -154,7 +164,7 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  color: #F1A6A3;
+  color: #1E7158;
   font-size: 24px;
   letter-spacing: 1px;
 }
@@ -238,6 +248,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #1E7158;
 }
 
 .panel {
@@ -253,7 +264,7 @@ a:hover {
 .btn {
   font-size: 1.5rem;
   margin: 1.5rem;
-  background-color: #4F97E2;
+  background-color: #1E7158;
   color: white;
   padding: 10px 25px;
   text-align: center;
@@ -420,7 +431,7 @@ a:hover {
 .schedule-logistics h4 {
   font-family: "Lexend Deca";
   font-weight: 800;
-  color: #F1A6A3;
+  color: #1E7158;
   font-size: 26px;
 }
 
@@ -430,7 +441,7 @@ a:hover {
 }
 
 .schedule-block .description {
-  color: #efe3ce;
+  color: #2950B0;
   /* text-align: justify; */
   font-weight: 400;
   padding-top: 5px;
@@ -454,7 +465,7 @@ a:hover {
 }
 
 .schedule-block h4 {
-  color: #efe3ce;
+  color: #2f5bc9;
   font-family: "Lexend Deca";
   font-size: 22px;
   margin-bottom: 4px;

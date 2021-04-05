@@ -207,7 +207,7 @@ a:hover {
 
 .boxes {
   z-index: -1;
-  width: 60%;
+  width: 20%;
   margin: 0rem auto;
 }
 
@@ -325,6 +325,7 @@ a:hover {
   }
 
   #camera {
+    height: auto;
     width: 0%;
   }
 

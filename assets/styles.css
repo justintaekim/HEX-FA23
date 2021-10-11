@@ -391,6 +391,21 @@ a:hover {
     font-size: 0.75rem;
     margin: 0.75rem;
   }
+
+  .clouds {
+    background-repeat: repeat-y;
+  }
+
+  .clouds:before, .clouds:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/fa21/clouds.png");
+    background-size: 125%;
+    background-repeat: repeat-y;
+    animation: scrollLeft 20s infinite linear;
+  }
 }
 
 @media only screen and (max-width: 600px) {

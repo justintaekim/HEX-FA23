@@ -1,6 +1,11 @@
 @font-face {
-  font-family: Pilowlava;
-  src: url(../assets/fonts/Pilowlava-Regular.woff);
+  font-family: Pixelade;
+  src: url(../assets/fonts/PIXELADE.woff);
+}
+
+@font-face {
+  font-family: Typopixel;
+  src: url(../assets/fonts/typo_pixel.woff);
 }
 
 * {
@@ -8,9 +13,14 @@
 }
 
 #hone-title {
-  color: #1E7158;
-  font-family: Pilowlava;
+  color: #559071;
+  font-family: Typopixel;
   -webkit-appearance: none;
+  text-shadow:
+    -3px -3px 0 #ecf3d8,
+    3px -3px 0 #ecf3d8,
+    -3px 3px 0 #ecf3d8,
+    3px 3px 0 #ecf3d8;  
 }
 
 .fixed-top {
@@ -21,7 +31,7 @@
   z-index: 0;
 }
 
-#cloud {
+/* #cloud {
   z-index: -999999;
   position: absolute;
   transform: translateY(-5em);
@@ -117,16 +127,16 @@
   position: absolute;
   right: 0;
   bottom: 25;
-}
+} */
 
 body {
-  font-family: "Lexend Deca";
+  font-family: Pixelade;
   font-weight: normal;
-  margin: 0;
+  margin: auto;
   z-index: 0;
-  background-color: #F0F7F4;
+  background-color: #193444;
   position: relative;
-  color: #efe3ce;
+  color: #ecf3d8;
   overflow-x: hidden;
 }
 
@@ -136,26 +146,65 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-bottom: 5rem;
+  margin: auto;
+  position: relative;
 }
 
 .hero-container h1 {
-  font-family: "Flamenco";
+  font-family: Pixelade;
   font-weight: bold;
 }
 
+.clouds {
+  position: absolute;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -9000;
+  opacity: 0.3;
+}
+
+.clouds:before, .clouds:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/fa21/clouds.png");
+  background-size: 125%;
+  background-repeat: no-repeat;
+  animation: scrollLeft 20s infinite linear;
+}
+
+.clouds:before {
+    right: 100%;
+}
+
+@keyframes scrollLeft {
+  from  {
+    transform: translateX(0%);
+  }
+  to {   
+    transform: translateX(100%);
+  }
+}
+
 h1 {
-  font-family: "Flamenco";
+  font-family: Pixelade;
   text-align: center;
   color: #fff;
   font-size: 100px;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   letter-spacing: .05em;
   font-weight: 800;
 }
 
 h2 {
-  font-family: "Lexend Deca";
+  font-family: Pixelade;
+  color: #acd692;
   font-size: 36px;
   margin: 0;
 }
@@ -164,14 +213,15 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  color: #1E7158;
+  color: #ecf3d8;
   font-size: 24px;
   letter-spacing: 1px;
 }
 
 h4 {
-  font-family: "Lexend Deca";
+  font-family: Pixelade;
   font-size: 22px;
+  color: #559071;
 }
 
 h5 {
@@ -179,17 +229,21 @@ h5 {
 }
 
 a {
-  color: #E66661;
+  color: #acd692;
   font-weight: bold;
 }
 
+p {
+  color: #ecf3d8;
+}
+
 a:hover {
-  color: #2f5bc9;
+  color: #559071;
   text-decoration: none;
 }
 
 .about-section {
-  margin: 5rem auto;
+  /* margin: 5rem auto; */
 }
 
 .faq-section {
@@ -197,7 +251,7 @@ a:hover {
 }
 
 .faq-section h4 {
-  color: #4F97E2;
+  color: #559071;
 }
 
 .box-container {
@@ -243,12 +297,17 @@ a:hover {
   width: 100%;
 }
 
-.description {
+.time {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #1E7158;
+  width: 100vw; 
+}
+
+.time h3 {
+  font-size: 20px;
 }
 
 .panel {
@@ -257,34 +316,69 @@ a:hover {
 
 .buttons {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.btn {
-  font-size: 1.5rem;
+.start-btn {
+  /* font-size: 1.5rem;
   margin: 1.5rem;
-  background-color: #1E7158;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  letter-spacing: 1px;
+  color: white; */
+  /* padding: 10px 25px; */
+  /* text-align: center;
+  letter-spacing: 1px; */
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+  background-image: url('../img/fa21/button.png');
+  background-size: 150%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+  position: relative;
 }
 
-.btn:hover {
-  background-color: #2950B0;
+.start-btn img {
+  width: 100%;
+}
+
+.btn-title {
+  width: 100%;
+  color: #ecf3d8;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start-btn:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.start-btn:active {
   color: white;
   text-decoration: none;
 }
 
-.btn:active {
-  background-color: #2950B0;
-  color: white;
+a:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s cubic-bezier(0,0,0.3,1);
 }
 
-.content {
+.schedule {
   margin: auto;
   width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -337,9 +431,24 @@ a:hover {
     width: 0%;
   }
 
+  .clouds {
+    background-repeat: repeat-y;
+  }
+
+  .clouds:before, .clouds:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/fa21/clouds.png");
+    background-size: 125%;
+    background-repeat: repeat-y;
+    animation: scrollLeft 20s infinite linear;
+  }
+
   .hero-container {
     margin-top: 0;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
   }
 
   .datetime img {
@@ -373,7 +482,7 @@ a:hover {
     margin: 1rem;
   }
 
-  .content {
+  .schedule {
     margin-top: 20%;
     width: 95%;
   }
@@ -414,6 +523,7 @@ a:hover {
 
 .schedule-day {
   position: relative;
+  width: 100%;
   /* padding-top: 24px; */
   /* border-top: 1px solid #283364 ; */
 }
@@ -430,10 +540,13 @@ a:hover {
 }
 
 .schedule-logistics h4 {
-  font-family: "Lexend Deca";
+  font-family: Pixelade;
   font-weight: 800;
-  color: #1E7158;
+  color: #559071;
   font-size: 26px;
+  padding: 2px;
+  /* background-image: url("../img/fa21/platform.png");
+  background-repeat: no-repeat; */
 }
 
 .schedule-block {
@@ -442,7 +555,7 @@ a:hover {
 }
 
 .schedule-block .description {
-  color: #2950B0;
+  color: #acd692;
   /* text-align: justify; */
   font-weight: 400;
   padding-top: 5px;
@@ -459,21 +572,20 @@ a:hover {
 }
 
 .schedule-block p {
-
+  color: #559071;
   font-weight: 600;
   /* font-size: 12px;  */
-  color: #4F97E2;
 }
 
 .schedule-block h4 {
-  color: #2f5bc9;
-  font-family: "Lexend Deca";
+  color: #1E7158;
+  font-family: Pixelade;
   font-size: 22px;
   margin-bottom: 4px;
 }
 
 .schedule-block b {
-  color: #F1A6A3;
+  color: #ecf3d8;
   font-size: 14px;
 }
 
@@ -481,8 +593,5 @@ a:hover {
   display: flex;
   justify-content: center;
   margin: 100px auto;
-}
-
-.footer img {
-  height: 300px;
+  text-align: center;
 }

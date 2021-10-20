@@ -68,9 +68,9 @@
 
     <!-- hero container -->
     <div class="hero-container container-fluid">
-      <div class="clouds">
-        <div src="img/fa21/cloudBL.png"></div>
-      </div>
+      <div class="clouds"></div>
+      <div class="tiny"></div>
+      <div class="big"></div>
       <div class="row">
         <div class="col">
           <h1 id="hone-title">HEX</h1>
@@ -116,19 +116,20 @@
       </div>
       <div class="buttons">
         <div class="btn">
-          <a class="start-btn" href="https://tinyurl.com/HEXF21" target="_blank">
+          <a class="start-btn start-btn-white start-btn-animated" href="https://tinyurl.com/HEXF21" target="_blank">
             <img src="img/fa21/button.png"/>
             <div class="btn-title">Join!</div>
           </a>
         </div>
         <div class="btn">
-          <a class="start-btn" href="https://drive.google.com/drive/u/1/folders/1ELtEIccS8BPZxF9X4aYVDAhL2pDTmmby"
+          <a class="start-btn start-btn-white start-btn-animated" href="https://drive.google.com/drive/u/1/folders/1ELtEIccS8BPZxF9X4aYVDAhL2pDTmmby"
             target="_blank">
             <img src="img/fa21/button.png" />
             <div class="btn-title">Resources</div>
           </a>
         </div>
       </div>
+      <a onclick="scrollSmoothTo('schedule')"><i class="arrow down"><span class="tooltiptext">click for the schedule!</span></i></a>
     </div>
 
     <div class="about-section">
@@ -157,7 +158,7 @@
     </div>
 
     <!-- workshop schedule container -->
-    <div class="schedule">
+    <div class="schedule" id="schedule">
       <div class="container-fluid">
         <!-- <div id="cloud-container">
           <img id="cloud" src="img/fa20/red cloud 2.png" />
@@ -380,6 +381,13 @@
                 target="_blank">here</a
               >.
             </p>
+            <h4>Are the workshops being recorded?</h4>
+            <p>
+              There will be no recordings this semester, but all material used by 
+              workshop hosts will be posted in the resources link
+              <a href="https://drive.google.com/drive/folders/1ELtEIccS8BPZxF9X4aYVDAhL2pDTmmby?usp=sharing"
+                target="_blank">here</a>!
+            </p>
             <h4>What do I do if I have questions for the host?</h4>
             <p>
               Our hosts are happy to take questions during the workshop. Feel
@@ -395,5 +403,14 @@
       <a href="https://innovativedesign.club/" target="_blank">&copy; innovative design</a>
     </div>
     <script src="assets/scripts.js"></script>
+    <script>
+      function scrollSmoothTo(elementId) {
+        var element = document.getElementById(elementId);
+        element.scrollIntoView({
+          block: 'start',
+          behavior: 'smooth'
+        });
+      }
+    </script>
   </body>
 </html>

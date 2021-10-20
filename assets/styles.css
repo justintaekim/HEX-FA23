@@ -12,6 +12,10 @@
   color:#1E7158;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #hone-title {
   color: #559071;
   font-family: Typopixel;
@@ -30,104 +34,6 @@
 .fixed-bottom {
   z-index: 0;
 }
-
-/* #cloud {
-  z-index: -999999;
-  position: absolute;
-  transform: translateY(-5em);
-  left: 65%;
-}
-
-#cloud2 {
-  z-index: -999999;
-  position: absolute;
-  width: 200%;
-}
-
-#cloud3 {
-  z-index: -999999;
-  position: absolute;
-  right: 80%;
-  top: 35%;
-  width: 100%;
-}
-
-#cloud4 {
-  z-index: -999999;
-  position: absolute;
-  right: 95%;
-  top: 35%;
-  width: 200%;
-}
-
-#camera {
-  z-index: -999999;
-  position: absolute;
-  width: 40%;
-  transform: translateY(5em);
-}
-
-#pen-tool {
-  z-index: -999999;
-  position: absolute;
-  width: 20%;
-  right: 50%;
-}
-
-#line {
-  z-index: -999999;
-  position: absolute;
-  width: 40%;
-  transform: translateY(5em);
-}
-
-#cloud-container {
-  text-align: center;
-  display: block;
-}
-
-#laptop {
-  z-index: -999999;
-  position: absolute;
-  width: 40%;
-  left: 90%;
-}
-
-#sparkle {
-  z-index: -999999;
-  position: absolute;
-  width: 25%;
-  right: 97%;
-  top: 40%;
-}
-
-#coffee {
-  height: 10vh;
-  position: absolute;
-  left: -10;
-  bottom: 20;
-}
-
-#bus {
-  height: 35vh;
-  position: absolute;
-  top: 25;
-  left: -25;
-}
-
-#water {
-  height: 10vh;
-  position: absolute;
-  right: 0;
-  top: 25;
-}
-
-#index-cards {
-  height: 25vh;
-  position: absolute;
-  right: 0;
-  bottom: 25;
-} */
 
 body {
   font-family: Pixelade;
@@ -158,14 +64,15 @@ body {
 .clouds {
   position: absolute;
   margin: auto;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  top: 10%;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  z-index: -9000;
-  opacity: 0.3;
+  z-index: -8000;
+  opacity: 0.4;
 }
 
 .clouds:before, .clouds:after {
@@ -173,13 +80,70 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../img/fa21/clouds.png");
-  background-size: 125%;
+  background-image: url("../img/fa21/clouds-all.png");
+  background-size: 100%;
   background-repeat: no-repeat;
   animation: scrollLeft 20s infinite linear;
 }
 
 .clouds:before {
+    right: 100%;
+}
+
+.tiny {
+  position: absolute;
+  margin: auto;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  top: 85%;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -7000;
+  opacity: 0.3;
+}
+
+.tiny:before, .tiny:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/fa21/clouds-tiny.png");
+  background-size: 15%;
+  background-repeat: no-repeat;
+  animation: scrollLeft 10s infinite linear;
+}
+
+.tiny:before {
+    right: 100%;
+}
+
+.big {
+  position: absolute;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -9000;
+  opacity: 0.6;
+}
+
+.big:before, .big:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/fa21/clouds-big.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  animation: scrollLeft 25s infinite linear;
+}
+
+.big:before {
     right: 100%;
 }
 
@@ -190,6 +154,70 @@ body {
   to {   
     transform: translateX(100%);
   }
+}
+
+.down {
+  box-sizing: border-box;
+  height: 2vw;
+  width: 2vw;
+  display: inline-block;
+  text-align: center;
+  border-style: solid;
+  border-color: #ecf3d8;
+  border-width: 0px 10px 10px 0px;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 10%;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
+  animation: pulse 1.5s infinite;
+}
+
+.down:hover {
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.85) rotate(45deg);
+    filter: drop-shadow(0px 0px 200px rgba(51, 217, 178, 0.7));
+  }
+  70% {
+    transform: scale(1) rotate(45deg);
+    /* box-shadow: 0 0 0 50px rgba(#5a99d4, 0); */
+    filter: drop-shadow(0px 0px 200px rgba(51, 217, 178, 0));
+  }
+  100% {
+    transform: scale(.85) rotate(45deg);
+    /* box-shadow: 0 0 0 0 rgba(#5a99d4, 0); */
+    filter: drop-shadow(0px 0px 0px rgba(51, 217, 178, 0));
+  }
+}
+
+/* Tooltip text */
+.down .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #1E7158;
+  color: #ecf3d8;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  transform: rotate(-45deg);
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  /* top: 100%; */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.down:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.8;
+  transition: opacity 1s ease-in-out;
 }
 
 h1 {
@@ -231,6 +259,7 @@ h5 {
 a {
   color: #acd692;
   font-weight: bold;
+  transition: color 0.3ss ease-in-out;
 }
 
 p {
@@ -240,6 +269,7 @@ p {
 a:hover {
   color: #559071;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 .faq-section {
@@ -357,16 +387,53 @@ a:hover {
 .start-btn:hover {
   text-decoration: none;
   cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .start-btn:active {
   color: white;
   text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-a:hover {
-  opacity: 0.5;
-  transition: opacity 0.5s cubic-bezier(0,0,0.3,1);
+.start-btn-white {
+    background-color: #559071;
+}
+
+.start-btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.start-btn-white::after {
+    background-color: #559071;
+}
+
+.start-btn:hover::after {
+    transform: scaleX(1.2) scaleY(3);
+    opacity: 0;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .schedule {
@@ -401,7 +468,7 @@ a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../img/fa21/clouds.png");
+    background-image: url("../img/fa21/clouds-all.png");
     background-size: 125%;
     background-repeat: repeat-y;
     animation: scrollLeft 20s infinite linear;
@@ -409,38 +476,6 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  #cloud {
-    width: 0%;
-  }
-
-  #cloud2 {
-    width: 0%;
-  }
-
-  #cloud3 {
-    width: 0%;
-  }
-
-  #cloud4 {
-    width: 0%;
-  }
-
-  #line {
-    width: 0%;
-  }
-
-  #camera {
-    height: auto;
-    width: 0%;
-  }
-
-  #sparkle {
-    width: 0%;
-  }
-
-  #pen-tool {
-    width: 0%;
-  }
 
   .clouds {
     background-repeat: repeat-y;
@@ -451,7 +486,7 @@ a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("../img/fa21/clouds.png");
+    background-image: url("../img/fa21/clouds-all.png");
     background-size: 125%;
     background-repeat: repeat-y;
     animation: scrollLeft 20s infinite linear;

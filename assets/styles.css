@@ -158,8 +158,8 @@ body {
 
 .down {
   box-sizing: border-box;
-  height: 2vw;
-  width: 2vw;
+  height: 30px;
+  width: 30px;
   display: inline-block;
   text-align: center;
   border-style: solid;

@@ -19,7 +19,7 @@ html {
 #hone-title {
   color: #559071;
   font-family: Typopixel;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   text-shadow:
     -3px -3px 0 #ecf3d8,
     3px -3px 0 #ecf3d8,

@@ -9,7 +9,7 @@
 }
 
 * {
-  color:#1E7158;
+  color: #000000;
 }
 
 html {
@@ -17,14 +17,10 @@ html {
 }
 
 #hone-title {
-  color: #559071;
-  font-family: Typopixel;
+  color: #000000;
+  font-family: sculpin, sans-serif;
   /* -webkit-appearance: none; */
-  text-shadow:
-    -3px -3px 0 #ecf3d8,
-    3px -3px 0 #ecf3d8,
-    -3px 3px 0 #ecf3d8,
-    3px 3px 0 #ecf3d8;  
+  font-size: 10vw;
 }
 
 .fixed-top {
@@ -36,13 +32,13 @@ html {
 }
 
 body {
-  font-family: Pixelade;
+  font-family: 'Play', sans-serif;
   font-weight: normal;
   margin: auto;
   z-index: 0;
-  background-color: #193444;
+  background-color: #ffffff;
   position: relative;
-  color: #ecf3d8;
+  color: #000000;
   overflow-x: hidden;
 }
 
@@ -57,7 +53,7 @@ body {
 }
 
 .hero-container h1 {
-  font-family: Pixelade;
+  font-family: 'Play', sans-serif;
   font-weight: bold;
 }
 
@@ -163,13 +159,13 @@ body {
   display: inline-block;
   text-align: center;
   border-style: solid;
-  border-color: #ecf3d8;
+  border-color: #000000;
   border-width: 0px 10px 10px 0px;
   transform: rotate(45deg);
   position: absolute;
   bottom: 10%;
   cursor: pointer;
-  box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
+  box-shadow: #000000;
   animation: pulse 1.5s infinite;
 }
 
@@ -198,8 +194,8 @@ body {
 .down .tooltiptext {
   visibility: hidden;
   width: 140px;
-  background-color: #1E7158;
-  color: #ecf3d8;
+  background-color: #000000;
+  color: #000000;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
@@ -221,9 +217,9 @@ body {
 }
 
 h1 {
-  font-family: Pixelade;
+  font-family: 'Play', sans-serif;
   text-align: center;
-  color: #fff;
+  color: #000000;
   font-size: 100px;
   /* margin-bottom: 3rem; */
   letter-spacing: .05em;
@@ -231,25 +227,26 @@ h1 {
 }
 
 h2 {
-  font-family: Pixelade;
-  color: #acd692;
+  font-family: sculpin, sans-serif;
+  color: #000000;
   font-size: 36px;
   margin: 0;
+  text-align: left;
 }
 
 h3 {
-  text-transform: uppercase;
+  font-family: sculpin, sans-serif;
   text-align: center;
   font-weight: bold;
-  color: #ecf3d8;
-  font-size: 24px;
+  color: #000000;
+  font-size: 14px;
   letter-spacing: 1px;
 }
 
 h4 {
-  font-family: Pixelade;
+  font-family: 'Play', sans-serif;
   font-size: 22px;
-  color: #559071;
+  color: #000000;
 }
 
 h5 {
@@ -257,17 +254,18 @@ h5 {
 }
 
 a {
-  color: #acd692;
+  color: #A268E3;
   font-weight: bold;
   transition: color 0.3ss ease-in-out;
 }
 
 p {
-  color: #ecf3d8;
+  color: #000000;
+  font-family: 'Play', sans-serif;
 }
 
 a:hover {
-  color: #559071;
+  color: #81C7B0;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
@@ -277,7 +275,13 @@ a:hover {
 }
 
 .faq-section h4 {
-  color: #559071;
+  color: #000000;
+}
+
+.faq-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .box-container {
@@ -328,12 +332,8 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #1E7158;
+  color: #000000;
   width: 100vw; 
-}
-
-.time h3 {
-  font-size: 20px;
 }
 
 .panel {
@@ -341,69 +341,61 @@ a:hover {
 }
 
 .buttons {
+  padding: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 30%;
 }
 
 .start-btn {
-  /* font-size: 1.5rem;
-  margin: 1.5rem;
-  color: white; */
-  /* padding: 10px 25px; */
-  /* text-align: center;
-  letter-spacing: 1px; */
-  background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-  background-image: url('../img/fa21/button.png');
-  background-size: 150%;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  margin: auto;
+  width: 7vw;
+  height: 5vh;
+  background: #000000;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.42);
+  border-radius: 10px;
   padding: auto;
-  position: relative;
-}
-
-.start-btn img {
-  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  transition: all .4s;
 }
 
 .btn-title {
-  width: 100%;
-  color: #ecf3d8;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  color: #fff;
+  margin: auto;
+  padding: auto;
+  vertical-align: middle;
+  line-height: 5vh;
 }
 
 .start-btn:hover {
-  text-decoration: none;
+  /* text-decoration: none; */
   cursor: pointer;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(3px);
+  box-shadow: none;
+  background-color: #81C7B0;
+  color:#fff;
+  transition: all .4s;
+  
 }
 
 .start-btn:active {
   color: white;
-  text-decoration: none;
+  /* text-decoration: none; */
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
 }
 
 .start-btn-white {
-    background-color: #559071;
+  background-color: #000000;
+  text-align: center;
+  color: #fff;
 }
 
 .start-btn::after {
-    content: "";
+    /* content: ""; */
     display: inline-block;
     height: 100%;
     width: 100%;
@@ -413,15 +405,17 @@ a:hover {
     left: 0;
     z-index: -1;
     transition: all .4s;
+    color: #fff;
 }
 
 .start-btn-white::after {
-    background-color: #559071;
+    background-color: #000000;
+    color: #fff;
 }
 
 .start-btn:hover::after {
     transform: scaleX(1.2) scaleY(3);
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 @keyframes moveInBottom {
@@ -436,12 +430,8 @@ a:hover {
     }
 }
 
-.schedule {
-  margin: auto;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.about-section {
+  margin: 5rem auto;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -586,7 +576,7 @@ a:hover {
 }
 
 .schedule-logistics h4 {
-  font-family: Pixelade;
+  font-family: 'Play', sans-serif;
   font-weight: 800;
   color: #559071;
   font-size: 26px;
@@ -625,7 +615,7 @@ a:hover {
 
 .schedule-block h4 {
   color: #1E7158;
-  font-family: Pixelade;
+  font-family: 'Play', sans-serif;
   font-size: 22px;
   margin-bottom: 4px;
 }
@@ -637,7 +627,18 @@ a:hover {
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 100px auto;
   text-align: center;
+}
+
+.footer-img {
+  width: 30%;
+  text-align: center;
+  margin: auto;
+}
+
+.footer-img img {
+  width: 30%;
 }

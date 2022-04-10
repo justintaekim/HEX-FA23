@@ -449,13 +449,18 @@ a:hover {
   margin: 5rem auto;
 }
 
+.schedule p {
+  text-align: left;
+}
+
 .game-board{ 
  display: grid;
  grid-template-columns: 120px 120px 120px 120px;
  grid-template-rows: 120px 120px 120px 120px 120px 120px 120px;
  justify-content: center;
-    overflow-x: scroll;
-
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 150%;
 }
 
 .box {
@@ -467,6 +472,8 @@ a:hover {
  justify-content: space-around;
  align-items: center; */
  padding: 10px;
+ position: relative;
+  cursor: pointer;
 }
 
 .box-special img {
@@ -490,6 +497,45 @@ a:hover {
     font-weight: bold;
   font-size: 12px;
 }
+
+.popover-content{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -150px;
+  transform: translate(0, 10px);
+  background-color: #bfbfbf;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  width: auto;
+  border-radius: 10px;
+}
+
+.popover-content p {
+  font-family: 'Play', sans-serif;
+
+}
+
+.popover-content:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  right: calc(25% - 10px);
+  top: -8px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #bfbfbf transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.box:hover .popover-content {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -20px);
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
 
 @media only screen and (max-width: 1400px) {
   h1 {

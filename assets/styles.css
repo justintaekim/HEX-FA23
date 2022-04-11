@@ -478,6 +478,7 @@ a:hover {
   overflow-y: hidden;
   height: 150%;
   width: 100%;
+  padding-left: 100px;
 }
 
 .box {
@@ -526,12 +527,12 @@ a:hover {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  left: -150px;
+  /* left: -150px; */
   transform: translate(0, 10px);
   background-color: #bfbfbf;
   padding: 1.5rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  width: auto;
+  width: 300px;
   border-radius: 10px;
 }
 
@@ -544,7 +545,7 @@ a:hover {
   position: absolute;
   z-index: -1;
   content: "";
-  right: calc(25% - 10px);
+  right: calc(50% - 10px);
   top: -8px;
   border-style: solid;
   border-width: 0 10px 10px 10px;
@@ -594,6 +595,10 @@ a:hover {
     background-repeat: repeat-y;
     animation: scrollLeft 20s infinite linear;
   }
+  
+  .game-board {
+    padding-left: 165px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -611,6 +616,10 @@ a:hover {
     background-size: 125%;
     background-repeat: repeat-y;
     animation: scrollLeft 20s infinite linear;
+  }
+
+  body {
+    width: 120vw;
   }
 
   .hero-container {
@@ -644,13 +653,23 @@ a:hover {
     margin-bottom: 15;
   }
 
-  .btn {
-    font-size: 1rem;
-    margin: 1rem;
+  .start-btn {
+    width: 80px;
+    height: 40px;
+    border-radius: 6px;
+    padding: auto;
+    margin: 20px;
+    position: relative;
+  }
+
+  .buttons {
+    width: 70%;
   }
 
   .btn-title {
-    font-size:xx-small;
+    /* position: absolute; */
+    font-size: 10px;
+    bottom: 2px;
   }
 
   .schedule {

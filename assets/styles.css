@@ -471,8 +471,8 @@ a:hover {
 
 .game-board{ 
  display: grid;
- grid-template-columns: 120px 120px 120px 120px;
- grid-template-rows: 120px 120px 120px 120px 120px 120px 120px;
+ grid-template-columns: 200px 200px 200px 200px;
+ grid-template-rows: 200px 200px 200px 200px 200px 200px 200px;
  justify-content: center;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -499,20 +499,27 @@ a:hover {
 }
 
 .box img {
-  width: 40%;
-  height: 40%;
+  width: 50%;
+  height: 50%;
   margin-bottom: 10px;
 }
 
-.box h5 {
-  margin-top: 5px;
+.box h3 {
+  margin-top: 7px;
   margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.box h5 {
+  margin-top: 7px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .box p {
   font-family: sculpin, sans-serif;
     font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .popover-content{
@@ -661,7 +668,8 @@ a:hover {
   }
 
   .game-board {
-    padding-left: 100px;
+    padding-left: 450px;
+    padding-right: 50px;
     width: 100%;
     overflow-x: scroll;
   }

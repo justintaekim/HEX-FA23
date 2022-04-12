@@ -183,8 +183,8 @@ body {
   border-color: #000000;
   border-width: 0px 10px 10px 0px;
   transform: rotate(45deg);
-  position: absolute;
-  bottom: 25%;
+  position: relative;
+  top: 25%;
   cursor: pointer;
   box-shadow: #000000;
   animation: pulse 1.5s infinite;
@@ -299,6 +299,12 @@ a:hover {
 
 .faq-section h4 {
   color: #000000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.faq p {
+  font-size: 20px;
 }
 
 .faq-content {
@@ -308,11 +314,11 @@ a:hover {
 }
 
 .col1 {
-  margin-right: 3vw;
+  margin-right: 2vw;
 }
 
 .col2 {
-  margin-left: 3vw;
+  margin-left: 2vw;
 }
 
 .box-container {
@@ -596,9 +602,9 @@ a:hover {
     animation: scrollLeft 20s infinite linear;
   }
   
-  .game-board {
+  /* .game-board {
     padding-left: 165px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 600px) {
@@ -619,12 +625,14 @@ a:hover {
   }
 
   body {
-    width: 120vw;
+    margin: auto;
+    padding: auto;
+    width: 100vw;
   }
 
   .hero-container {
     margin-top: 0;
-    /* margin-bottom: 3rem; */
+    width: 125%;
   }
 
   .datetime img {
@@ -679,18 +687,22 @@ a:hover {
   }
 
   .faq-section {
-    width: 95%;
+    width: 125%;
   }
 
   .about-section {
-    width: 95%;
+    width: 125%;
   }
 
   .game-board {
-    padding-left: 450px;
-    padding-right: 50px;
+    padding-left: 460px;
+    /* padding-right: 100px; */
     width: 100%;
     overflow-x: scroll;
+  }
+
+  .footer {
+    width: 125%;
   }
 
 }
@@ -698,7 +710,7 @@ a:hover {
 
 .title {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 /* About */

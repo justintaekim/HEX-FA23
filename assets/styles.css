@@ -64,7 +64,7 @@ body {
   font-weight: bold;
 }
 
-/* .background {
+.background {
   position: absolute;
   z-index: -200;
   top: 0;
@@ -76,7 +76,7 @@ body {
 .background img {
   height: 100vh;
   min-width: 100%;
-} */
+} 
 
 .clouds {
   position: absolute;
@@ -569,6 +569,20 @@ a:hover {
 
 
 @media only screen and (max-width: 1400px) {
+  .background {
+    position: absolute;
+    z-index: -200;
+    top: 0;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+  }
+
+  .background img {
+    height: 100vh;
+    visibility: hidden;
+  } 
+
   h1 {
     font-size: 54px;
     margin-bottom: 1rem;

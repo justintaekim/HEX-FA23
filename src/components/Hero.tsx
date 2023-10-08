@@ -7,8 +7,10 @@ const Hero = () => {
   return (
     <div className={heroStyles.hero}>
       {/* NavBar */}
-      <div>Innovative Design</div>
-      <p>asldkjflaskdnvlkdasjflkdasnlkfnakfjsalkjfaldkjafdlskdj</p>
+      <p>
+        Just fucking come to HEX and find out why the fuck would you want to
+        search the website bitch?
+      </p>
     </div>
   );
 };

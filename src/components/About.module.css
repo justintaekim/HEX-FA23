@@ -1,5 +1,32 @@
-.about {
-    display: flex;
-    flex-direction: row;
-    font-size: 30px;
+@font-face {
+    font-family: Neofolia;
+    src: url("../assets/font/neofolia.ttf");
+}
+
+.title {
+    flex: 1;
+    color: #FFF;
+    font-family: 'Neofolia';
+    font-size: 7vmax;
+    font-style: normal;
+    text-align: left;
+    margin-top: 5em;
+    margin-bottom: -50px;
+    text-shadow: 0 0 1vmax #FFFFFF;
+}
+
+.intro {
+    font-size: 1.5vmax;
+    font-family: "bd-supper", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+}
+
+.description {
+    font-size: 1.5vmax;
+    font-family: "bd-supper", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
 }

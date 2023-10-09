@@ -4,10 +4,18 @@ import heroStyles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <div className={heroStyles.hero}>
-      {/* NavBar */}
-      <p>
-        friendly text
+    <div>
+      <p className={heroStyles.innod}>
+        Innovative Design
+      </p>
+      <h1 className={heroStyles.title}>
+        HEX
+      </h1>
+      <p className={heroStyles.caption}>
+        Hone & Explore
+      </p>
+      <p className={heroStyles.subcaption}>
+        <pre>October 21-22, 2023      Social Sciences 20</pre>
       </p>
     </div>
   );

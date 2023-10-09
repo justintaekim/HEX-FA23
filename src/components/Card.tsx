@@ -2,7 +2,7 @@ import cardStyles from "./Card.module.css";
 
 // Card
 
-const Card = (props) => {
+const Card = (props: any) => {
   return (
     <div className={cardStyles.applyPadding}>
       <div className={cardStyles.applyBorder}>

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Neofolia;
+  src: url("../assets/font/neofolia.ttf");
+}
+
+.title {
+  flex: 1;
+  color: #fff;
+  font-family: "Neofolia";
+  font-size: 7vmax;
+  font-style: normal;
+  text-align: left;
+  margin-top: 15rem;
+  /* margin-bottom: -50px; */
+  text-shadow: 0 0 1vmax #ffffff;
+}
+
+.subtitle {
+  color: #fff;
+  font-family: "Neofolia";
+  font-size: 3.5vmax;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.applyFlex {
+  display: flex;
+  width: 100%;
+}
+
+.flexChild {
+  flex: 1;
+  text-align: left;
+}

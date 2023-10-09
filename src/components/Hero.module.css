@@ -12,13 +12,12 @@
 
 .title {
   flex: 1;
-  color: #FFF;
-  font-family: 'Neofolia';
+  color: #fff;
+  font-family: "Neofolia";
   font-size: 20vmax;
   font-style: normal;
   text-align: center;
-  margin-bottom: -100px;
-  text-shadow: 0 0 1vmax #F68DFF;
+  text-shadow: 0 0 1vmax #f68dff;
 }
 
 .caption {
@@ -33,4 +32,17 @@
   font-family: "bd-supper", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+/* Not working */
+.outline {
+  text-decoration: none;
+  border-radius: 3.375rem;
+  border: 1px solid #fff;
+  color: white;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+}
+
+.colorWhite {
+  color: white;
 }

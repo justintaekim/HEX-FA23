@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Neofolia;
+  src: url("../assets/font/neofolia.ttf");
+}
+
+.title {
+  color: #fff;
+  font-family: "bd-supper", sans-serif;
+  font-size: 1.34931rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.instructor {
+  color: #fff;
+  font-family: "bd-supper", sans-serif;
+  font-size: 1.03794rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.note {
+  color: #fff;
+  font-family: "bd-supper", sans-serif;
+  font-size: 0.93413rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.applyBorder {
+  border: 0.2rem solid white; /* Set border width and color */
+  border-radius: 1rem;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.applyPadding {
+  padding: 1rem;
+}

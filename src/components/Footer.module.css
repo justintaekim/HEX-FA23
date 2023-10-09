@@ -1,0 +1,14 @@
+.logo {
+  width: 100px;
+  margin-top: 15rem;
+}
+
+.text {
+  color: #fff;
+  font-family: "bd-supper", sans-serif;
+  font-size: 1.5vmax;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 2rem 0rem 5rem 0rem;
+}

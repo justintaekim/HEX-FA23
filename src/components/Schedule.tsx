@@ -21,9 +21,9 @@ const Schedule = () => {
             note=""
           />
           <Card
-            title="Studio Quest: Unleash Your Creativity"
-            instructor="James Nguyen & Sylvie Lam - [2PM-3PM]"
-            note="Materials Needed: Camera, laptop, Adobe Lightroom, Adobe Photoshop"
+            title="Studio Quest: Unleash Your Creativity - [2PM-3PM]"
+            instructor="James Nguyen & Sylvie Lam"
+            note="Materials Needed: Camera"
           />
           <Card
             title="Intro to 35mm Film Photography - [3PM-4PM]"

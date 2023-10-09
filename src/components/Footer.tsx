@@ -1,5 +1,5 @@
 import footerStyles from "./Footer.module.css";
-import logo from "../assets/innod constellation.png";
+import logo from "../assets/logo_light.png";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
       <img className={footerStyles.logo} src={logo} alt="innoD Logo" />
       <div>
         <p className={footerStyles.text}>
-          All rights reserved by Innovative Design at Berkeley
+          ©All rights reserved by Innovative Design at Berkeley
         </p>
       </div>
     </div>

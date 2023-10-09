@@ -1,0 +1,52 @@
+.title {
+  flex: 1;
+  color: #fff;
+  font-family: "Neofolia";
+  font-size: 7vmax;
+  font-style: normal;
+  text-align: left;
+  margin-top: 15rem;
+  text-shadow: 0 0 1vmax #ffffff;
+}
+
+.subtitle {
+  color: #fff;
+  font-family: "Neofolia";
+  font-size: 3.5vmax;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.description {
+  font-size: 1.2vmax;
+  font-family: "bd-supper", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+
+.accordion {
+  background-color: transparent;
+  --bs-accordion-bg: transparent;
+  --bs-accordion-btn-bg: transparent;
+  --bs-accordion-border-width: 0.3rem;
+  --bs-accordion-border-radius: 1rem;
+  --bs-accordion-active-bg: rgba(255, 255, 255, 0.85);
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-body {
+  color: white;
+}
+
+.accordion-button {
+  background-color: white;
+  font-size: 1.4vmax;
+}
+
+.accordion-button,
+.accordion-button.collapsed {
+  background-color: transparent;
+  color: white;
+}

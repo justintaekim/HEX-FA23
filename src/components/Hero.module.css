@@ -18,6 +18,7 @@
   font-style: normal;
   text-align: center;
   text-shadow: 0 0 1vmax #f68dff;
+  margin-top: 1em;
 }
 
 .caption {
@@ -25,6 +26,7 @@
   font-family: "bd-supper", sans-serif;
   font-weight: 700;
   font-style: normal;
+  margin-top: -5rem;
 }
 
 .subcaption {
@@ -32,9 +34,9 @@
   font-family: "bd-supper", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-top: 5rem;
 }
 
-/* Not working */
 .outline {
   text-decoration: none;
   border-radius: 3.375rem;

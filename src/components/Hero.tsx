@@ -19,7 +19,7 @@ const Hero = () => {
       <h1 className={heroStyles.title}>HEX</h1>
       <p className={heroStyles.caption}>Hone & Explore</p>
       <p className={heroStyles.subcaption}>
-        <pre>October 21-22, 2023 Social Sciences 20</pre>
+        <pre>October 21-22, 2023       Social Sciences 20</pre>
       </p>
     </div>
   );

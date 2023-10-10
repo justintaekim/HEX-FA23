@@ -18,19 +18,28 @@
 .subtitle {
   color: #fff;
   font-family: "Neofolia";
-  font-size: 3.5vmax;
+  font-size: 5vmax;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-left: 1rem;
+  margin-top: 2rem;
 }
 
-.applyFlex {
-  display: flex;
-  width: 100%;
-}
+/* Apply the .applyFlex and .flexChild styles for screens wider than 767px (adjust as needed) */
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 3.5vmax;
+    margin-top: 0rem;
+  }
 
-.flexChild {
-  flex: 1;
-  text-align: left;
+  .applyFlex {
+    display: flex;
+    width: 100%;
+  }
+
+  .flexChild {
+    flex: 1;
+    text-align: left;
+  }
 }

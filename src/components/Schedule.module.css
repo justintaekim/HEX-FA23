@@ -56,81 +56,8 @@
   }
 }
 
-.illustration4 {
-  position: absolute;
-  width: 30vw;
-  top: 410vh;
-  right: 1vw;
-  flex: 1;
-}
-
-@media only screen and (max-width: 1350px) {
-  .illustration4{
-    top: 400vh;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  .illustration4{
-    top: 380vh;
-  }
-}
-
-@media only screen and (max-width: 1120px) {
-  .illustration4{
-    top: 360vh;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .illustration4{
-    top: 350vh;
-  }
-}
-
-@media only screen and (max-width: 860px) {
-  .illustration4{
-    top: 340vh;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .illustration4{
-    top: 350vh;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .illustration4{
-    top: 360vh;
-  }
-}
-
-@media only screen and (max-width: 630px) {
-  .illustration4{
-    top: 370vh;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .applyFlex {
     flex-direction: column;
-  }
-
-  .illustration4 {
-    top: 470vh;
-    width: 40vw;
-  }
-}
-
-@media only screen and (max-width: 525px) {
-  .illustration4 {
-    top: 490vh;
-  }
-}
-
-@media only screen and (max-width: 460px) {
-  .illustration4 {
-    top: 500vh;
   }
 }

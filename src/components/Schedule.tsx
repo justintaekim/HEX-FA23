@@ -82,7 +82,6 @@ const Schedule = () => {
           />
         </div>
       </div>
-      <img className={scheduleStyles.illustration4} src={illustration4}></img>
     </div>
   );
 };

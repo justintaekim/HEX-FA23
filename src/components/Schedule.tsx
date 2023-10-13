@@ -1,5 +1,6 @@
 import scheduleStyles from "./Schedule.module.css";
 import Card from "./Card";
+import illustration4 from "../assets/illustration4.png";
 
 // About
 
@@ -77,6 +78,7 @@ const Schedule = () => {
           />
         </div>
       </div>
+      <img className={scheduleStyles.illustration4} src={illustration4}></img>
     </div>
   );
 };

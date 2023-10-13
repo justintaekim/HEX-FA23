@@ -48,6 +48,20 @@
   color: white;
 }
 
+.illustration1 {
+  position: absolute;
+  width: 40vw;
+  left: 3vw;
+  top: 70vh;
+}
+
+.illustration2 {
+  position: absolute;
+  width: 30vw;
+  right: 3vw;
+  top: 5vh;
+}
+
 /* MOBILE DEVICE */
 @media only screen and (max-width: 600px) {
   .innod {
@@ -55,5 +69,16 @@
     font-family: "bd-supper", sans-serif;
     font-weight: 400;
     font-style: normal;
+  }
+
+  .illustration1 {
+    width: 60vw;
+    left: 3vw;
+    top: 65vh;
+  }
+
+  .illustration2 {
+    width: 40vw;
+    top: 15vh;
   }
 }

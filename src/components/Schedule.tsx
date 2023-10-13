@@ -1,6 +1,5 @@
 import scheduleStyles from "./Schedule.module.css";
 import Card from "./Card";
-import illustration4 from "../assets/illustration4.png";
 
 // About
 

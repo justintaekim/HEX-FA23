@@ -43,7 +43,11 @@ const Schedule = () => {
           />
         </div>
         <div className={scheduleStyles.flexChild}>
-          <div className={scheduleStyles.subtitle}>October 22</div>
+          <div
+            className={`${scheduleStyles.subtitle} ${scheduleStyles.subtitle2}`}
+          >
+            October 22
+          </div>
           <Card
             title="Sakuga Splash: The Art of Impact Frames - [12PM-1PM]"
             instructor="Lucy Yang"

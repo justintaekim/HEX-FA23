@@ -63,6 +63,12 @@
 }
 
 /* MOBILE DEVICE */
+
+@media only screen and (max-width: 1000px) {
+  .illustration1 {
+    top: 50vh;
+  }
+}
 @media only screen and (max-width: 600px) {
   .innod {
     font-size: 1.5vmax;
@@ -74,11 +80,17 @@
   .illustration1 {
     width: 60vw;
     left: 3vw;
-    top: 65vh;
+    top: 50vh;
   }
 
   .illustration2 {
     width: 40vw;
-    top: 15vh;
+    top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .illustration1 {
+    top: 60vh;
   }
 }

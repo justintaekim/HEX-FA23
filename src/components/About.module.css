@@ -29,3 +29,33 @@
   font-style: normal;
   text-align: left;
 }
+
+/* .aboutFlex {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+} */
+.text {
+  width: 60vw;
+}
+
+.illustration3 {
+  position: absolute;
+  right: 7vw;
+  width: 20vw;
+  top: 160vh;
+}
+
+@media only screen and (max-width: 980px) {
+  .illustration3 {
+    top: 110vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .illustration3 {
+    top: 125vh;
+    right: 3vw;
+    width: 30vw;
+  }
+}

@@ -17,7 +17,7 @@ const Schedule = () => {
           />
           <Card
             title="A Journey into DIY Bookmaking - [1PM-2PM]"
-            instructor="Keira Ho & Audrey Wu"
+            instructor="Keira Ho & Audrey Morga"
             note=""
           />
           <Card

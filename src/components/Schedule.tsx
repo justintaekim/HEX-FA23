@@ -33,7 +33,7 @@ const Schedule = () => {
           <Card
             title="Photo Sequencing: The Craft of Visual Flow - [4PM-5PM]"
             instructor="Gisella Chan, Jackie Ma, & Isabelly Duarte"
-            note="Materials Needed: Laptop, Adobe Illustrator"
+            note="Materials Needed: Laptop"
           />
           <Card
             title="Intro to Figma - [5PM-6PM]"

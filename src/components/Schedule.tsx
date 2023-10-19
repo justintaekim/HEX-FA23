@@ -67,7 +67,7 @@ const Schedule = () => {
             title="Landscape Lens: Capturing Natural
             Beauty - [3PM-4PM]"
             instructor="Lillian Jiang, Jason Su, & Medha Iyer"
-            note="Materials Needed: Laptop, Adobe Illustrator"
+            note="Materials Needed: Laptop, Adobe Lightroom"
           />
           <Card
             title="Intro to Web Development - [4PM-5PM]"

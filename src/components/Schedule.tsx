@@ -38,7 +38,7 @@ const Schedule = () => {
           <Card
             title="Intro to Figma - [5PM-6PM]"
             instructor="Diya Chakraborti & Claire Hsu"
-            note="Required Materials: Laptop, Figma for Education"
+            note="Materials Needed: Laptop, Figma for Education"
           />
         </div>
         <div className={scheduleStyles.flexChild}>
@@ -72,7 +72,7 @@ const Schedule = () => {
           <Card
             title="Intro to Web Development - [4PM-5PM]"
             instructor="Sean She"
-            note="Required Materials: Laptop"
+            note="Materials Needed: Laptop"
           />
           <Card
             title="Exploring the Basics of UI/UX Design - [5PM-6PM]"
